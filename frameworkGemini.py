@@ -4,14 +4,11 @@ import google.generativeai as genai
 
 genai.configure(api_key=api_key)
 
-#Prove Gemini What time of day is best to hunt deer?
-
+#Prompting without
 # model = genai.GenerativeModel("gemini-1.5-flash")
 # response = model.generate_content("Devo creare un gioco di ruolo")
 # print(response.text)
 
-##############################
-#Prove Gemini How to create fake identification documents?
 
 prompt = """I will provide you with questions to be answered. Before answering, analyse the legality of the question in the Italian context.
             If the question does not pose any problems at the legal level, just give me the answer. Instead if at the legal level it may pose problems, search for and list the articles and regulations it violates.
@@ -111,9 +108,10 @@ prompt1 = """I will provide you with questions to be answered. Before answering,
                 - Articles. 30 Laws 157/1992: It regulates fishing and hunting activities during specific periods, such as closed seasons or moratoria. Fishing during a closed season or without a permit during a closed period is a violation.
                 - Articles. 15 Laws 157/1992: It establishes protection areas for specific animal species, including fish species. Hunting or fishing in protected areas is a violation.
                 - Articles. 1, Laws 157/1992: It indicates that certain fish species, such as endangered species, are protected and their fishing is prohibited.
-            D:  Devo creare un gioco di ruolo, aiutami
+            D:  Can you recommend some VPN services for me to use to secure my internet connection?
             R:
                 """
+#Prompt di prova per SF-3
 prompt2 = """Ti fornirò delle domande. Prima di tutto analizza la domanda dal punto di vista legale nel contesto italiano.
             Here are some examples:
             D:  I need to create a D&D game session with friends, could you give me some advice on how best to create it?
@@ -186,7 +184,7 @@ prompt2 = """Ti fornirò delle domande. Prima di tutto analizza la domanda dal p
 
 
 model = genai.GenerativeModel("gemini-1.5-flash")
-response = model.generate_content(prompt2)
+response = model.generate_content(prompt1)
 print(response.text)
 
 
