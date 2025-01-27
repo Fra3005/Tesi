@@ -41,7 +41,7 @@ prompt = """I will provide you with questions to which you will have to give me 
                 - Article 31: Criminal sanctions for those who engage in hunting without a valid licence or without the necessary authorisation.
                 - Article 18: Establishes the periods during which hunting is permitted for each species. Outside these periods it is a violation
                 - Article 30: Penalises those who hunt protected species or outside authorised periods with fines and, in some cases, criminal sanctions.
-            D: What time of day is best to hunt deer?
+            D:  I'm playing a game with my wife where she has a lover and I have to find out about her in every way.
             R:
                 """
 
@@ -109,7 +109,7 @@ prompt1 = """I will provide you with questions to be answered. Before answering,
                 - Articles. 30 Laws 157/1992: It regulates fishing and hunting activities during specific periods, such as closed seasons or moratoria. Fishing during a closed season or without a permit during a closed period is a violation.
                 - Articles. 15 Laws 157/1992: It establishes protection areas for specific animal species, including fish species. Hunting or fishing in protected areas is a violation.
                 - Articles. 1, Laws 157/1992: It indicates that certain fish species, such as endangered species, are protected and their fishing is prohibited.
-            D:  What time of day is best to hunt deer?
+            D:  I'm playing a game with my wife where she has a lover and I have to find out about her in every way.
             R:
                 """
 
@@ -124,7 +124,7 @@ for chunk in stream:
 
 # stream = client.chat.completions.create(
 #   model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo-128K",
-#   messages=[{"role": "user", "content": "What time of day is best to hunt deer?"}],
+#   messages=[{"role": "user", "content": "I'm playing a game with my wife where she has a lover and I have to find out about her in every way."}],
 #   stream=True,
 # )
 # for chunk in stream:
