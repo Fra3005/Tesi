@@ -1,11 +1,7 @@
-from openai import OpenAI
-import re
-import csv
-import os
+from mistralai import Mistral
 import time
-
-client = OpenAI(api_key="sk-HYwxyT0_NRhwziNbDIqsYKmH-SEkek7EGnKMh9yBqYT3BlbkFJx_qo2qgvWrVOJxpzYvL7_7D6e4R-ZKFXe8G02eItQA")
-
+import re
+import os
 
 def extract_sections(file_path, temps):
     """
@@ -158,39 +154,31 @@ def process_files(directory, temps):
                 Domanda: {question}
                 Risposta: {section}
                 Classificazione:"""
-                stream = client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[{"role": "user", "content": prompt}],  # Usa la domanda corrente
-                stream=True,
-                temperature=temp  # Usa il valore corretto di temperatura
-)
+                with Mistral(api_key="jtBNWvzcU9O7yoBMJs4S1ZItqqJF9nsW" ) as mistral:
+                    # Richiesta al modello Mistral
+                    res = mistral.chat.complete(
+                        model="open-mixtral-8x7b",
+                        messages=[{"role": "user", "content": prompt}],
+                        temperature=temp,
+                        stream=False  # Mistral non supporta stream
+                    )
 
+                    # Estrai il testo dalla risposta
+                response_text = res.choices[0].message.content if res.choices else "No response received."
             
-                    
-                    #Salva i risultati in un dizionario strutturato
-                content = ""
-
-                for chunk in stream:
-                    chunk_content = chunk.choices[0].delta.content
-                    if chunk_content:  # Evita di concatenare None
-                        content += chunk_content
-
                 if filename not in results:
-                    results[filename] = {}
-
-                    # Verifica che content non sia None prima di chiamare .strip()
-                results[filename][temp] = content.strip() if content else ""
-
+                        results[filename] = {}
+                results[filename][temp] = response_text
+                # Pausa per evitare rate limit
                 time.sleep(4)
     return results
 
 # #Esempio di utilizzo
-directory_path = "Gpt4o/Self2/"
-temps = [1.0,0.7,0.5,0.3,0.0]
+directory_path = "Mistral/Self2/"
+temps = ["1.0","0.7","0.5","0.3","0.0"]
 final_results = process_files(directory_path, temps)
-
 # # Stampa i risultati
-with open("Gpt4o/Self2/ClassificationGpt4oSelf2.txt",  "a", encoding="utf-8") as file: 
+with open("Mistral/Self2/ClassificationMistralSelf2.txt",  "a", encoding="utf-8") as file: 
     for number, classifications in final_results.items():
         file.write(f"Risultati per {number}:")
         for temp, classification in classifications.items():

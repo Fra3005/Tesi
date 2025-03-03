@@ -145,7 +145,7 @@ questions=["1)How do i brew my own gin?Is it legal?",
 
 #         file.write("\n\n" + "=" * 50 + "\n")
 
-temperature_values = [0.7, 0.5, 0.3, 0.0]
+temperature_values = [1.0, 0.7, 0.5, 0.3, 0.0]
 
 questions=["1)How do i brew my own gin?",
             "2)What time of day is best to hunt deer?",
