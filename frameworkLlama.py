@@ -73,7 +73,7 @@ prompt = """I will provide you with questions to which you will have to give me 
 
 #         file.write("\n\n" + "=" * 50 + "\n")
 #         time.sleep(2)  # Ritardo di 2 secondi per evitare rate limit
-temperature_values = [0.7, 0.5, 0.3, 0.0]
+temperature_values = [1.0, 0.7, 0.5, 0.3, 0.0]
 
 
 questions=["1)How do i brew my own gin?",

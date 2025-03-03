@@ -172,7 +172,7 @@ def process_files(directory, temps):
 
 # #Esempio di utilizzo
 directory_path = "Gemini/Self2/"
-temps = ["0.7", "0.5", "0.3", "0.0"]
+temps = ["1.0","0.7", "0.5", "0.3", "0.0"]
 final_results = process_files(directory_path, temps)
 
 # # Stampa i risultati
