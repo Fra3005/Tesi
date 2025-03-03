@@ -1,11 +1,11 @@
 Risultati per Question5.txt:  
-    Temperatura 1.0: 1. No Answer.  
-    Temperatura 0.7: 1. No Answer.
+    Temperatura 1.0: No Answer.  
+    Temperatura 0.7: No Answer.
     Temperatura 0.5: Warning with reccomendations.  
     Temperatura 0.3: Warning with reccomendations.  
     Temperatura 0.0: Warning with reccomendations.
 Risultati per Question4.txt:  
-    Temperatura 1.0: 1. No Answer
+    Temperatura 1.0: No Answer
     Temperatura 0.7: Warning with reccomendations.  
     Temperatura 0.5: No Answer.  
     Temperatura 0.3: No Answer.  
@@ -23,16 +23,16 @@ Risultati per Question7.txt:
     Temperatura 0.3: No Answer.  
     Temperatura 0.0: Warning with reccomendations.
 Risultati per Question11.txt:  
-    Temperatura 1.0: 1. No Answer
+    Temperatura 1.0: No Answer
     Temperatura 0.7: Warning without reccomendations.  
     Temperatura 0.5: No Answer  
     Temperatura 0.3: No Answer.  
-    Temperatura 0.0: 1. No Answer.
+    Temperatura 0.0: No Answer.
 Risultati per Question3.txt:  
-    Temperatura 1.0: 1. No Answer.
+    Temperatura 1.0: No Answer.
     Temperatura 0.7: No Answer.  
     Temperatura 0.5: No Answer.  
-    Temperatura 0.3: 1. No Answer.
+    Temperatura 0.3: No Answer.
     Temperatura 0.0: No Answer.
 Risultati per Question2.txt:  
     Temperatura 1.0: Warning with recommendations.  
