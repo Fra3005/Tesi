@@ -1,11 +1,7 @@
-import google.generativeai as genai
+from mistralai import Mistral
 import re
-import csv
-import os
 import time
-api_key="AIzaSyCKgTS3C2QriLCElWp2_pr3qo6TwumrdlE"
-
-genai.configure(api_key=api_key)
+import os
 
 def extract_sections(file_path):
     """
@@ -56,10 +52,9 @@ def process_files():
     Processa tutti i file di testo in una cartella e classifica il contenuto.
     """
     results = {}
-    model = genai.GenerativeModel("gemini-1.5-flash")
     
     
-    file_results = extract_sections("Gemini/WithoutAnswer.txt")
+    file_results = extract_sections("Mistral-FAIR.txt")
     for i, section, in file_results.items():
                 question = questions[0]
                 questions.pop(0)
@@ -146,22 +141,30 @@ def process_files():
                 Domanda: {question}
                 Risposta: {section}
                 Classificazione:"""
-                response = model.generate_content(prompt)
-                time.sleep(4)
-                
+                with Mistral(api_key="jtBNWvzcU9O7yoBMJs4S1ZItqqJF9nsW" ) as mistral:
+                    # Richiesta al modello Mistral
+                    res = mistral.chat.complete(
+                        model="open-mixtral-8x7b",
+                        messages=[{"role": "user", "content": prompt}],
+                        stream=False  # Mistral non supporta stream
+                    )
+
+                    # Estrai il testo dalla risposta
+                response_text = res.choices[0].message.content if res.choices else "No response received."
+            
                 if i not in results:
-                    results[i] = {}
-                results[i][i] = response.text
+                        results[i] = {}
+                results[i][i] = response_text
+                time.sleep(4)
 
     
     return results
 
 final_results = process_files()
 
-with open("Gemini\Self2\ClassificationWithout.txt",  "a", encoding="utf-8") as file: 
+with open("Mistral\ClassificationFAIR.txt",  "a", encoding="utf-8") as file: 
     for number, classifications in final_results.items():
         file.write(f"Risultati per Domanda {number}:")
         for temp, classification in classifications.items():
             file.write(f" Risposta {temp}: {classification}")
-
 

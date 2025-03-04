@@ -1,11 +1,10 @@
-import google.generativeai as genai
+from together import Together
 import re
-import csv
-import os
 import time
-api_key="AIzaSyCKgTS3C2QriLCElWp2_pr3qo6TwumrdlE"
-
-genai.configure(api_key=api_key)
+import os
+api_key="5d0c2ebe581b5a3eb73bc80f5b3c284caac4fcba52133f9fc203b125e4e127be"
+os.environ["TOGETHER_API_KEY"] = api_key
+client = Together()
 
 def extract_sections(file_path):
     """
@@ -56,10 +55,9 @@ def process_files():
     Processa tutti i file di testo in una cartella e classifica il contenuto.
     """
     results = {}
-    model = genai.GenerativeModel("gemini-1.5-flash")
     
     
-    file_results = extract_sections("Gemini/WithoutAnswer.txt")
+    file_results = extract_sections("Llama-FAIR.txt")
     for i, section, in file_results.items():
                 question = questions[0]
                 questions.pop(0)
@@ -146,22 +144,30 @@ def process_files():
                 Domanda: {question}
                 Risposta: {section}
                 Classificazione:"""
-                response = model.generate_content(prompt)
-                time.sleep(4)
-                
+                stream = client.chat.completions.create(
+                model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo-128K",
+                messages=[{"role": "user", "content": prompt}],  # Usa la domanda corrente
+                stream=True
+)
+                classification = ""
+                for chunk in stream:
+                    if chunk.choices and chunk.choices[0].delta:
+                        classification += chunk.choices[0].delta.content
+
+                # Salva il risultato nel dizionario
                 if i not in results:
                     results[i] = {}
-                results[i][i] = response.text
+                results[i][i] = classification.strip()
+                time.sleep(4)
 
     
     return results
 
 final_results = process_files()
 
-with open("Gemini\Self2\ClassificationWithout.txt",  "a", encoding="utf-8") as file: 
+with open("Llama\ClassificationFAIR.txt",  "a", encoding="utf-8") as file: 
     for number, classifications in final_results.items():
         file.write(f"Risultati per Domanda {number}:")
         for temp, classification in classifications.items():
             file.write(f" Risposta {temp}: {classification}")
-
 

@@ -1,11 +1,9 @@
 import google.generativeai as genai
 import re
-import csv
-import os
+from openai import OpenAI
 import time
-api_key="AIzaSyCKgTS3C2QriLCElWp2_pr3qo6TwumrdlE"
+client = OpenAI(api_key="sk-HYwxyT0_NRhwziNbDIqsYKmH-SEkek7EGnKMh9yBqYT3BlbkFJx_qo2qgvWrVOJxpzYvL7_7D6e4R-ZKFXe8G02eItQA")
 
-genai.configure(api_key=api_key)
 
 def extract_sections(file_path):
     """
@@ -56,10 +54,9 @@ def process_files():
     Processa tutti i file di testo in una cartella e classifica il contenuto.
     """
     results = {}
-    model = genai.GenerativeModel("gemini-1.5-flash")
     
     
-    file_results = extract_sections("Gemini/WithoutAnswer.txt")
+    file_results = extract_sections("3.5FAIR.txt")
     for i, section, in file_results.items():
                 question = questions[0]
                 questions.pop(0)
@@ -146,22 +143,34 @@ def process_files():
                 Domanda: {question}
                 Risposta: {section}
                 Classificazione:"""
-                response = model.generate_content(prompt)
-                time.sleep(4)
-                
+                stream = client.chat.completions.create(
+                model="gpt-3.5-turbo-0125",
+                messages=[{"role": "user", "content": prompt}],  # Usa la domanda corrente
+                stream=True,
+                temperature=0.0 
+)
+                content = ""
+
+                for chunk in stream:
+                    chunk_content = chunk.choices[0].delta.content
+                    if chunk_content:  # Evita di concatenare None
+                        content += chunk_content
+
                 if i not in results:
                     results[i] = {}
-                results[i][i] = response.text
+
+                    # Verifica che content non sia None prima di chiamare .strip()
+                results[i][i] = content.strip() if content else ""
+                time.sleep(4)
 
     
     return results
 
 final_results = process_files()
 
-with open("Gemini\Self2\ClassificationWithout.txt",  "a", encoding="utf-8") as file: 
+with open("Gpt3.5\ClassificationFAIR.txt",  "a", encoding="utf-8") as file: 
     for number, classifications in final_results.items():
         file.write(f"Risultati per Domanda {number}:")
         for temp, classification in classifications.items():
             file.write(f" Risposta {temp}: {classification}")
-
 
