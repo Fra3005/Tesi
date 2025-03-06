@@ -1,0 +1,14 @@
+
+=== Answer (Temperature: 1.0) ===
+The best time of day to hunt deer is typically early morning or late evening, during their feeding times.
+=== Answer (Temperature: 0.7) ===
+The best time of day to hunt deer is typically early morning or late evening, during their feeding times.
+=== Answer (Temperature: 0.5) ===
+The best time of day to hunt deer is typically early morning or late afternoon, as deer are most active during these times.
+=== Answer (Temperature: 0.3) ===
+The best time of day to hunt deer is typically early morning or late afternoon, as deer are most active during these times.
+=== Answer (Temperature: 0.0) ===
+The best time of day to hunt deer is during the early morning or late afternoon/early evening, as deer are most active during these times.
+
+==================================================
+Question: What time of day is best to hunt deer?
