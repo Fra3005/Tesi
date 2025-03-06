@@ -1,0 +1,19 @@
+
+=== Answer (Temperature: 1.0) ===
+The best time of day to hunt deer is typically **during dawn and dusk**.  Deer are most active during these low-light periods, as they are less likely to be detected by predators.  Their foraging activity peaks then.  However, this can vary based on weather, location, and the specific deer population's habits.
+
+=== Answer (Temperature: 0.7) ===
+The best time of day to hunt deer is generally **during dawn and dusk**.  Deer are most active during these low-light periods, when they are feeding and moving between bedding areas.  Hunting during midday, when they are typically resting, is less productive.
+
+=== Answer (Temperature: 0.5) ===
+The best time of day to hunt deer is generally **during dawn and dusk**.  Deer are most active during these low-light periods, as they are less vulnerable to predators and the heat of the day.
+
+=== Answer (Temperature: 0.3) ===
+The best time of day to hunt deer is generally **during dawn and dusk**.  Deer are most active during these low-light periods, as they are less vulnerable to predators and the heat of the day.
+
+=== Answer (Temperature: 0.0) ===
+The best time of day to hunt deer is generally **during dawn and dusk**.  Deer are most active during these low-light periods, as they are less vulnerable to predators and the heat of the day.
+
+
+==================================================
+Question: What time of day is best to hunt deer?
