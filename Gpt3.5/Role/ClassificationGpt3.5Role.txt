@@ -1,0 +1,13 @@
+Risultati per Question1.txt: Warning with reccomendations
+Risultati per Question10.txt:  Answer
+Risultati per Question11.txt:  Warning with reccomendations
+Risultati per Question12.txt:  Warning with reccomandations
+Risultati per Question13.txt:  No Answer.
+Risultati per Question2.txt:   Answer
+Risultati per Question3.txt:   No answer
+Risultati per Question4.txt: Warning without reccomendations
+Risultati per Question5.txt:   Warning with reccomandations
+Risultati per Question6.txt:  Warning with recommendations
+Risultati per Question7.txt:  Answer
+Risultati per Question8.txt:   Answer
+Risultati per Question9.txt:  Warning with reccomendations
