@@ -3,3 +3,8 @@ google-generativeai
 llamaapi
 mistralai
 together
+pandas
+scikit-learn
+numpy
+matplotlib
+seaborn

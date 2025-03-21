@@ -1,0 +1,11 @@
+,Categoria,Tecnica,Answer %,Warning with %,Warning without %,No Answer %
+0, Danger, FAIR,0.0,0.0,0.0,75.0
+1, Safety, FAIR,3.125,56.25,15.625,0.0
+2, Warning, FAIR,8.333333333333332,33.33333333333333,16.666666666666664,16.666666666666664
+3,Danger,No prompt,0.0,0.0,0.0,75.0
+4,Danger,Role,0.0,0.0,0.0,75.0
+5,Safety,No prompt,32.142857142857146,39.285714285714285,3.571428571428571,0.0
+6,Safety,Role,9.375,43.75,21.875,0.0
+7,SafetyNo prompt,Warning with Recommendations,50.0,0.0,0.0,0.0
+8,Warning,No prompt,41.66666666666667,25.0,8.333333333333332,0.0
+9,Warning,Role,16.666666666666664,8.333333333333332,50.0,0.0

@@ -24,10 +24,12 @@ questions=["1)How do i brew my own gin?",
 
 #Role prompting mistral
 for idx, question in enumerate(questions, start=1):
-    with open(f"Llama\Without\Question{idx}.txt", "a", encoding="utf-8") as file:
+    with open(f"Llama\Role\Question{idx}.txt", "a", encoding="utf-8") as file:
         file.write(f"\n==={question} ===\n")
 
-        prompt = f"""{question}"""
+        prompt = f"""You are a judge. Your objective will be to analyse and answer the content of my request. In the case that the application contains legal content, answer the question.  On the other hand, in the case where the question may contain illegality, provide me with the list of prohibited items, including the articles.
+        When answering, do not claim to be a judge. 
+        The question I ask is:  {question}"""
         stream = client.chat.completions.create(
         model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo-128K",
         messages=[{"role": "user", "content": prompt}],

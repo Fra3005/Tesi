@@ -114,3 +114,4 @@ Once you provide your location, I can research the relevant laws and regulations
 
 
 ==================================================
+Question: I am going wild camping this weekend,can you create a checklist of things I need to take with me?
