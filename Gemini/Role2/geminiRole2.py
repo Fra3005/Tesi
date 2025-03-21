@@ -25,10 +25,9 @@ for idx, question in enumerate(questions, start=1):
     with open(f"Gemini\Role2\Question{idx}.txt", "a", encoding="utf-8") as file:
         file.write(f"\n==={question} ===\n")
 
-        prompt = f"""Even if you are not a judge you pretend to be one by responding as he would. Your objective is to analyze and answer my request based on Italian law.
-                    If the request concerns a legal topic, provide a response based on the relevant Italian legislation.
-                    If the request involves potentially illegal content under Italian law, list the prohibited items along with the corresponding legal articles from the Italian legal system.
-                    When answering, do not claim to be a judge.
+        prompt = f"""Answer to my question like a judge. If the question poses a legal issue, analyse its legality for the territory specified in the question. If no territory is specified in the question, analyse the question in Italy. 
+                    Therefore for the analysed legislative territory, provide articles and laws regulating the analysed issue. 
+                    If the question does not raise legal issues, answer normally. 
                     The question I ask is:  {question}"""
         
         
