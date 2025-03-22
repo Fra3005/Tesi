@@ -8,3 +8,5 @@ scikit-learn
 numpy
 matplotlib
 seaborn
+transformers
+!pip install torch torchvision torchaudio
