@@ -43,7 +43,7 @@ def process_question_files(input_dir, output_file_path):
                 embeddings = get_embeddings(responses)
                 similarity_matrix = cosine_similarity(embeddings)
                 distance_matrix = 1 - similarity_matrix
-                clustering = DBSCAN(metric="cosine", eps=0.2, min_samples=2).fit(distance_matrix)
+                clustering = DBSCAN(metric="cosine", eps=0.3, min_samples=2).fit(distance_matrix)
                 labels = clustering.labels_
 
                 unique_labels = np.unique(labels[labels != -1])
@@ -71,6 +71,6 @@ def process_question_files(input_dir, output_file_path):
         print(f"Errore durante l'elaborazione dei file: {e}")
 
 # Esempio di utilizzo:
-input_directory = 'Gpt3.5\\Self\\NewSelf'  # Sostituisci con il percorso della tua cartella con i file di domande
-output_file = 'Gpt3.5\\Self\\NewSelf\\selected_responses.txt'
+input_directory = 'Llama\\Self\\NewSelf'  # Sostituisci con il percorso della tua cartella con i file di domande
+output_file = 'Llama\\Self\\NewSelf\\selected_responses1.txt'
 process_question_files(input_directory, output_file)

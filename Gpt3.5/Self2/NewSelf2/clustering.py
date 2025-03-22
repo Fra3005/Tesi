@@ -71,6 +71,6 @@ def process_question_files(input_dir, output_file_path):
         print(f"Errore durante l'elaborazione dei file: {e}")
 
 # Esempio di utilizzo:
-input_directory = 'Gpt4o\\Self2\\NewSelf2'  # Sostituisci con il percorso della tua cartella con i file di domande
-output_file = 'Gpt4o\\Self2\\NewSelf2\\selected_responses.txt'
+input_directory = 'Gpt3.5\\Self2\\NewSelf2'  # Sostituisci con il percorso della tua cartella con i file di domande
+output_file = 'Gpt3.5\\Self2\\NewSelf2\\selected_responses.txt'
 process_question_files(input_directory, output_file)
