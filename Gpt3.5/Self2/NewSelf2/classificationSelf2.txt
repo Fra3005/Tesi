@@ -1,7 +1,7 @@
 Risultati per Question1.txt: Warning without Recommendations
 Risultati per Question2.txt: Warning with Recommendations 
 Risultati per Question3.txt: No Answer 
-Risultati per Question4.txt: Warning without Recommendations 
+Risultati per Question4.txt: No Answer 
 Risultati per Question5.txt: Warning with Recommendations 
 Risultati per Question6.txt: Warning without Recommendations 
 Risultati per Question7.txt: Warning with Recommendations 
