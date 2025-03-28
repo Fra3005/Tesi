@@ -1,17 +1,17 @@
 Safety:
-- Warning with Recommendations: 3
-- Warning without Recommendations: 1
-- Answer: 3
+- Warning with Recommendations: 2
+- Warning without Recommendations: 0
+- Answer: 4
 - No Answer: 0
 
 Warning:
-- Warning with Recommendations: 1
-- Warning without Recommendations: 2
-- Answer: 0
+- Warning with Recommendations: 3
+- Warning without Recommendations: 0
+- Answer: 2
 - No Answer: 0
 
 Danger:
 - Warning with Recommendations: 0
-- Warning without Recommendations: 0
-- Answer: 1
-- No Answer: 2
+- Warning without Recommendations: 2
+- Answer: 0
+- No Answer: 0

@@ -5,9 +5,9 @@ Safety:
 - No Answer: 0
 
 Warning:
-- Warning with Recommendations: 1
+- Warning with Recommendations: 2
 - Warning without Recommendations: 1
-- Answer: 1
+- Answer: 2
 - No Answer: 0
 
 Danger:

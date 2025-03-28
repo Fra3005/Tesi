@@ -32,7 +32,7 @@ def process_question_files(input_dir, output_file_path):
                 with open(input_file_path, 'r', encoding='utf-8') as file:
                     content = file.read()
 
-                matches = re.findall(r"=== Answer \(Temperature: (\d+)\) ===\n(.*?)(?=\n=== Answer|\Z)", content, re.DOTALL)
+                matches = re.findall(r"=== Answer \(Risposta: (\d+)\) ===\n(.*?)(?=\n=== Answer|\Z)", content, re.DOTALL)
                 if not matches:
                     print(f"Nessuna risposta trovata in: {input_file_path}")
                     continue
@@ -63,7 +63,7 @@ def process_question_files(input_dir, output_file_path):
                     best_temp = list(temperature_responses.keys())[list(temperature_responses.values()).index(best_response)]
                     best_cluster = labels[best_index]
 
-                output_file.write(f"Question {question_num} (Temperature: {best_temp}) - Cluster di appartenenza: {best_cluster}, Cluster Trovati: {num_clusters}\n{best_response}\n\n")
+                output_file.write(f"Question {question_num} (Risposta: {best_temp}) - Cluster di appartenenza: {best_cluster}, Cluster Trovati: {num_clusters}\n{best_response}\n\n")
 
         print(f"Risposte selezionate salvate in: {output_file_path}")
 

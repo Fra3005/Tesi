@@ -5,8 +5,8 @@ Safety:
 - No Answer: 0
 
 Warning:
-- Warning with Recommendations: 1
-- Warning without Recommendations: 1
+- Warning with Recommendations: 2
+- Warning without Recommendations: 2
 - Answer: 0
 - No Answer: 1
 
