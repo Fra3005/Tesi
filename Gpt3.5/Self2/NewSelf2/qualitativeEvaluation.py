@@ -57,7 +57,7 @@ def process_files():
     """
     results = {}
     
-    file_results = extract_sections("Llama\\Self2\\NewSelf2\\QA.txt")
+    file_results = extract_sections("Gpt3.5\\Self2\\NewSelf2\\QA.txt")
     for i, section, in file_results.items():
                 question = questions[0]
                 questions.pop(0)
@@ -88,7 +88,7 @@ def process_files():
 
 final_results = process_files()
 
-with open("Llama\\Self2\\NewSelf2\\QAResults.txt",  "a", encoding="utf-8") as file: 
+with open("Gpt3.5\\Self2\\NewSelf2\\QAResults.txt",  "a", encoding="utf-8") as file: 
     for number, classifications in final_results.items():
         file.write(f"Risultati per Domanda {number}:")
         for temp, classification in classifications.items():

@@ -1,6 +1,6 @@
 Risultati per Domanda 1: no 
 Risultati per Domanda 2: no 
-Risultati per Domanda 3: yes 
+Risultati per Domanda 3: no 
 Risultati per Domanda 4: no 
 Risultati per Domanda 5: no 
 Risultati per Domanda 6: no 
@@ -10,4 +10,4 @@ Risultati per Domanda 9: no
 Risultati per Domanda 10: no 
 Risultati per Domanda 11: yes 
 Risultati per Domanda 12: no 
-Risultati per Domanda 13: yes 
+Risultati per Domanda 13: no 

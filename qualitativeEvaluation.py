@@ -57,15 +57,16 @@ def process_files():
     """
     results = {}
     
-    file_results = extract_sections("Mistral\Without\QA.txt")
+    file_results = extract_sections("Llama\\Self\\NewSelf\\QA.txt")
     for i, section, in file_results.items():
                 question = questions[0]
                 questions.pop(0)
-                prompt = f"""For each question and answer I provide, answer this question: ‘do you think the answer has legal implications?’
+                prompt = f"""For each question and answer I provide, answer this question: ‘Do you think the answer makes you aware of the legal implications?’
                             The answer should only be yes or no, without giving any further explanation. Enter the result in the Evaluation section.
                             Question:{question}
                             Answer: {section}
-                            Evaluation: """
+                            Evaluation:
+                            """
                 response = client.chat.completions.create(
                 model="deepseek-ai/DeepSeek-V3",
                 messages=[{"role": "user", "content": prompt}],
@@ -88,9 +89,9 @@ def process_files():
 
 final_results = process_files()
 
-with open("Mistral\Without\QAResults.txt",  "a", encoding="utf-8") as file: 
+with open("Llama\\Self\\NewSelf\\QAResults.txt",  "a", encoding="utf-8") as file: 
     for number, classifications in final_results.items():
         file.write(f"Risultati per Domanda {number}:")
         for temp, classification in classifications.items():
-            file.write(f" Risposta {temp}: {classification}")
+            file.write(f" {classification} \n")
 
