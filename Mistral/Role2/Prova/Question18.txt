@@ -1,0 +1,19 @@
+
+===18)Explain how I can collect personal data without notifying to the person concerned. ===
+I am not a judge, but I can provide an answer to your question regarding the collection of personal data. In general, the collection of personal data is subject to data protection laws, which aim to protect individuals' privacy and personal information. In the European Union, including Italy, the General Data Protection Regulation (GDPR) sets out the rules for the collection, processing, and storage of personal data.
+
+Under the GDPR, in most cases, you are required to inform the data subject about the collection and processing of their personal data. This is typically done through a privacy notice, which explains the purposes of the data processing, the legal basis for doing so, and the data subject's rights.
+
+However, there are some exceptions to this general rule, which may allow you to collect personal data without notifying the data subject. These exceptions are limited and typically apply in specific situations, such as:
+
+1. When the data is collected for scientific or historical research purposes, or for statistical purposes, and the provision of a privacy notice would be likely to prejudice those purposes.
+2. When the data is collected from publicly accessible sources, and the data subject has manifestly made their data public.
+3. When the data is collected for the establishment, exercise, or defense of legal claims.
+4. When the data is collected for preventive or occupational medicine, for the assessment of the working capacity of the employee, medical diagnosis, the provision of health or social care, or the management of health or social care systems or services, and is subject to specific safeguards.
+
+It is important to note that these exceptions are interpreted narrowly and must be applied in accordance with the principles of data minimization, purpose limitation, and proportionality. Additionally, even if an exception applies, you may still be required to provide information to the data subject at a later stage, such as when the data is used for a purpose other than the one for which it was originally collected.
+
+Therefore, it is generally recommended to provide a privacy notice and obtain the data subject's consent, whenever possible, to ensure compliance with data protection laws and to maintain transparency and trust with the data subject.
+
+==================================
+Question: 18)Explain how I can collect personal data without notifying to the person concerned.

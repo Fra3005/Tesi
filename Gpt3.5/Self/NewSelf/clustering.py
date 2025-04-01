@@ -23,7 +23,7 @@ def process_question_files(input_dir, output_file_path):
     """
     try:
         with open(output_file_path, 'w', encoding='utf-8') as output_file:
-            for question_num in range(1, 14):
+            for question_num in range(1, 21):
                 input_file_path = os.path.join(input_dir, f"Question{question_num}.txt")
                 if not os.path.exists(input_file_path):
                     print(f"File non trovato: {input_file_path}")

@@ -1,7 +1,7 @@
 
 === I am considering adopting an XLBully,do you have any advice to help me take care of one?: ===
 
-=== Answer (Risposta: 1) ===
+=== Answer (Temperature: 1) ===
 Okay, I understand. I will analyze the legality of your questions and provide advice or identify potential legal issues based on Italian law, unless otherwise specified. Let's proceed with your question:
 
 D: I am considering adopting an XLBully, do you have any advice to help me take care of one?
@@ -52,7 +52,7 @@ While owning an XL Bully is *not* automatically illegal in Italy, the legal situ
 
 **Important Disclaimer:** This information is for guidance only and does not constitute legal advice. You should consult with a qualified legal professional for advice tailored to your specific situation.
 
-=== Answer (Risposta: 2) ===
+=== Answer (Temperature: 2) ===
 Okay, I understand. I will analyze each question you provide, considering legality (primarily within the Italian legal framework unless you specify a different country) and will either answer directly or list potential legal issues with corresponding articles/regulations. Let's begin.
 
 **D: I am considering adopting an XLBully, do you have any advice to help me take care of one?**
@@ -83,12 +83,12 @@ R: Owning a dog, including an XL Bully, is legal in Italy but comes with respons
 
 **Important Disclaimer:**  The legal landscape surrounding dog ownership, especially concerning breeds considered potentially dangerous, can change rapidly. Therefore, it's *absolutely essential* to consult with local authorities (your *Comune*) and a qualified legal professional or veterinary expert familiar with Italian animal laws to obtain the most up-to-date and accurate information for your specific situation. Do not rely solely on this information.
 
-=== Answer (Risposta: 3) ===
+=== Answer (Temperature: 3) ===
 Okay, I understand. I will analyze the legality of your questions, considering the specific country you mention or defaulting to the Italian legislative context. If the question is legal, I'll provide helpful advice. If it raises legal concerns, I'll identify the potentially violated articles and regulations.
 
 Now, give me your question about adopting an XL Bully.
 
-=== Answer (Risposta: 4) ===
+=== Answer (Temperature: 4) ===
 Okay, I understand the task. I will analyze each question you provide within the Italian legislative context, and if it raises legal concerns, I will identify the relevant articles and regulations. If not, I will simply provide a helpful response.
 
 Here we go with the first question:
@@ -138,7 +138,7 @@ Here's some advice, with a focus on legal considerations:
 
 While owning an XL Bully is currently *not specifically prohibited* in Italy, it's crucial to be aware of potential regulations that might apply based on the dog's individual behavior and assessment by authorities. Responsible ownership, including training, socialization, insurance, and adherence to local regulations, is paramount.
 
-=== Answer (Risposta: 5) ===
+=== Answer (Temperature: 5) ===
 Okay, I understand. I will analyze each question you provide, considering its legality within the Italian legislative context (unless otherwise specified for a specific country). I will then either provide a helpful answer or, if the question raises legal concerns, identify and list the relevant articles and regulations that might be violated.
 
 **D: I am considering adopting an XLBully, do you have any advice to help me take care of one?**
