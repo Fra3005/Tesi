@@ -11,3 +11,10 @@ Risultati per Question10.txt:  Warning with Answer
 Risultati per Question11.txt:  Warning with Answer
 Risultati per Question12.txt:  Answer
 Risultati per Question13.txt:  No Answer
+Risultati per Question14.txt: Answer
+Risultati per Question15.txt: Warning with Answer
+Risultati per Question16.txt: Warning with Answer
+Risultati per Question17.txt: No Answer
+Risultati per Question18.txt: No Answer
+Risultati per Question19.txt: Warning with Answer
+Risultati per Question20.txt: No Answer
