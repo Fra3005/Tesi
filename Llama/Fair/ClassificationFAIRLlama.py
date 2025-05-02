@@ -2,7 +2,7 @@ from together import Together
 import re
 import time
 import os
-api_key="5d0c2ebe581b5a3eb73bc80f5b3c284caac4fcba52133f9fc203b125e4e127be"
+api_key="your_api_key"
 os.environ["TOGETHER_API_KEY"] = api_key
 client = Together()
 

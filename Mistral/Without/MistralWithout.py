@@ -32,7 +32,7 @@ for idx, question in enumerate(questions, start=1):
         prompt = f"""{question}"""
         with Mistral(
             #api_key=os.getenv("MISTRAL_API_KEY", ""),
-            api_key="jtBNWvzcU9O7yoBMJs4S1ZItqqJF9nsW"
+            api_key="your_api_key"
         ) as mistral:
 
             res = mistral.chat.complete(model="open-mixtral-8x7b", messages=[

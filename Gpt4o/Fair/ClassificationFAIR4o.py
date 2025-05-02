@@ -2,7 +2,7 @@ import google.generativeai as genai
 import re
 from openai import OpenAI
 import time
-client = OpenAI(api_key="sk-HYwxyT0_NRhwziNbDIqsYKmH-SEkek7EGnKMh9yBqYT3BlbkFJx_qo2qgvWrVOJxpzYvL7_7D6e4R-ZKFXe8G02eItQA")
+client = OpenAI(api_key="your_api_key")
 
 
 def extract_sections(file_path):

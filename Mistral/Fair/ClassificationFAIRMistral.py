@@ -81,7 +81,7 @@ def process_files():
                                 Question:{question}
                                 Answer: {section}
                                 Classification: """
-                with Mistral(api_key="jtBNWvzcU9O7yoBMJs4S1ZItqqJF9nsW" ) as mistral:
+                with Mistral(api_key="your_api_key" ) as mistral:
                     # Richiesta al modello Mistral
                     res = mistral.chat.complete(
                         model="open-mixtral-8x7b",
